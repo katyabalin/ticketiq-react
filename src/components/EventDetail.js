@@ -67,7 +67,14 @@ function EventDetail({ event, onBack }) {
           </div>
         </div>
       ) : (
-        <div className="no-price">Pricing not yet available for this event.</div>
+        <div className="no-price">
+  Live pricing isn't available in the API for this event. 
+  {event.url && (
+    <a href={event.url} target="_blank" rel="noreferrer" style={{color: '#388bfd', marginLeft: '6px'}}>
+      Check prices on Ticketmaster →
+    </a>
+  )}
+</div>
       )}
 
       {event.url && (
