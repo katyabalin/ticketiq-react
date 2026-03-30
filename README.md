@@ -46,4 +46,4 @@ Then:
 npm start
 ```
 
-Get a free Ticketmaster API key at [developer.ticketmaster.com](https://developer.ticketmaster.com) and an Anthropic key at [console.anthropic.com](https://console.anthropic.com).
+Get a free Ticketmaster API key at [developer.ticketmaster.com](https://developer.ticketmaster.com) and an Anthropic key at [console.anthropic.com](https://console.anthropic.com).# TicketIQ
