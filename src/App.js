@@ -5,6 +5,7 @@ import SearchBar from './components/SearchBar';
 import EventList from './components/EventList';
 import EventDetail from './components/EventDetail';
 import { searchEvents } from './utils/api';
+import CaseStudy from './components/CaseStudy';
 
 const FEATURED_SEARCHES = ['Taylor Swift', 'Kendrick Lamar', 'NBA'];
 
@@ -50,6 +51,11 @@ function App() {
     }
   };
 
+  // Check if we're on the case study page
+  if (window.location.pathname === '/case-study') {
+    return <CaseStudy />;
+  }
+
   return (
     <div className="app">
       <Header />
@@ -59,23 +65,17 @@ function App() {
           <h1 className="hero-title">Know when to<br /><em>buy</em></h1>
           <p className="hero-sub">Search any event. Get a demand score, buying recommendation, and AI-powered market analysis.</p>
         </div>
-
         <SearchBar onSearch={handleSearch} loading={loading} />
         {error && <div className="error-msg">{error}</div>}
-
         {selectedEvent && (
           <EventDetail event={selectedEvent} onBack={() => setSelectedEvent(null)} />
         )}
-
         {!selectedEvent && searched && events.length > 0 && (
           <EventList events={events} onSelect={setSelectedEvent} />
         )}
-
         {!searched && !selectedEvent && (
           <>
-            <div className="featured-header">
-              <div className="section-title" style={{ marginTop: '2.5rem' }}>✦ Trending Events</div>
-            </div>
+            <div className="section-title" style={{ marginTop: '2.5rem' }}>✦ Trending Events</div>
             {featuredLoading ? (
               <div className="featured-loading">Loading trending events...</div>
             ) : (
