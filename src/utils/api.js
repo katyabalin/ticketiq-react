@@ -1,5 +1,4 @@
 const TM_KEY = process.env.REACT_APP_TICKETMASTER_API_KEY;
-const ANTHROPIC_KEY = process.env.REACT_APP_ANTHROPIC_API_KEY;
 
 export async function searchEvents(query, category = 'All', size = 10) {
   const params = new URLSearchParams({
