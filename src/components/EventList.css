@@ -60,3 +60,119 @@
 }
 
 .event-card:hover .event-card-arrow { color: #388bfd; }
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .event-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .event-grid { grid-template-columns: 1fr; }
+}
+
+.event-grid-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.event-grid-card:hover {
+  box-shadow: 0 8px 24px rgba(56,139,253,0.15);
+  transform: translateY(-3px);
+}
+
+.event-grid-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #f3f4f6;
+  overflow: hidden;
+}
+
+.event-grid-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-grid-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background: linear-gradient(135deg, #e5e7eb, #f3f4f6);
+}
+
+.event-grid-tag {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  background: rgba(13, 17, 23, 0.75);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+
+.event-grid-body {
+  padding: 1rem 1.25rem;
+}
+
+.event-grid-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0d1117;
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.event-grid-meta {
+  font-size: 0.78rem;
+  color: #9ca3af;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.event-grid-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.event-grid-price {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #388bfd;
+  background: rgba(56, 139, 253, 0.08);
+  border: 1px solid rgba(56, 139, 253, 0.2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.event-grid-price-na {
+  font-size: 0.8rem;
+  color: #388bfd;
+  font-weight: 500;
+}

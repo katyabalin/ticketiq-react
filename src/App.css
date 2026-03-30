@@ -76,3 +76,11 @@
   padding-bottom: 6px;
   border-bottom: 1px solid #e5e7eb;
 }
+
+.featured-loading {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-weight: 300;
+}
