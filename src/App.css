@@ -2,8 +2,8 @@
 
 .app {
   min-height: 100vh;
-  background: #0d1117;
-  color: #e6edf3;
+  background: #f4f5f7;
+  color: #1a1a2e;
   font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -32,7 +32,7 @@
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -1.5px;
-  color: #e6edf3;
+  color: #0d1117;
   margin-bottom: 1rem;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .hero-sub {
-  color: #7d8590;
+  color: #6b7280;
   font-size: 1rem;
   font-weight: 300;
   max-width: 500px;
@@ -52,14 +52,14 @@
 }
 
 .error-msg {
-  color: #f85149;
+  color: #ef4444;
   font-size: 0.9rem;
   margin-top: 1rem;
 }
 
 .empty-state {
   text-align: center;
-  color: #30363d;
+  color: #9ca3af;
   font-size: 1rem;
   margin-top: 4rem;
   font-weight: 300;
@@ -74,5 +74,5 @@
   color: #388bfd;
   margin-bottom: 1rem;
   padding-bottom: 6px;
-  border-bottom: 1px solid #21262d;
+  border-bottom: 1px solid #e5e7eb;
 }

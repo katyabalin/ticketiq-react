@@ -2,9 +2,9 @@
 
 .back-btn {
   background: none;
-  border: 1px solid #21262d;
+  border: 1px solid #e5e7eb;
   border-radius: 6px;
-  color: #7d8590;
+  color: #9ca3af;
   padding: 0.4rem 1rem;
   font-size: 0.8rem;
   cursor: pointer;
@@ -19,7 +19,7 @@
   font-family: 'Outfit', sans-serif;
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 800;
-  color: #e6edf3;
+  color: #0d1117;
   line-height: 1.15;
   margin-bottom: 0.75rem;
   letter-spacing: -0.5px;
@@ -29,7 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  color: #7d8590;
+  color: #6b7280;
   font-size: 0.875rem;
   font-weight: 300;
   margin-bottom: 0.5rem;
@@ -37,7 +37,7 @@
 
 .detail-category {
   font-size: 0.75rem;
-  color: #484f58;
+  color: #9ca3af;
   margin-bottom: 1.5rem;
 }
 
@@ -48,7 +48,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #388bfd;
-  border-bottom: 1px solid #21262d;
+  border-bottom: 1px solid #e5e7eb;
   padding-bottom: 6px;
   margin: 1.5rem 0 1rem;
 }
@@ -61,22 +61,20 @@
 }
 
 .price-card {
-  background: #161b22;
-  border: 1px solid #21262d;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 1.2rem 1.5rem;
   min-width: 140px;
   flex: 1;
-  transition: border-color 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
-
-.price-card:hover { border-color: #388bfd; }
 
 .price-card-label {
   font-size: 0.65rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #484f58;
+  color: #9ca3af;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
@@ -85,15 +83,15 @@
   font-family: 'Outfit', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #e6edf3;
+  color: #0d1117;
 }
 
 .no-price {
-  background: #161b22;
-  border: 1px solid #21262d;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 1rem 1.5rem;
-  color: #484f58;
+  color: #9ca3af;
   font-size: 0.875rem;
   margin-bottom: 1rem;
 }
@@ -111,7 +109,7 @@
 .buy-link:hover { opacity: 0.7; }
 
 .insight-btn {
-  background: #388bfd;
+  background: #0d1117;
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -126,16 +124,17 @@
   margin-bottom: 1rem;
 }
 
-.insight-btn:hover { background: #58a6ff; }
+.insight-btn:hover { background: #388bfd; }
 .insight-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .insight-box {
-  background: #161b22;
-  border: 1px solid #21262d;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-top: 3px solid #388bfd;
   border-radius: 8px;
   padding: 1.5rem;
   margin-top: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 .insight-label {
@@ -150,16 +149,17 @@
 .insight-text {
   font-size: 0.95rem;
   font-weight: 300;
-  color: #c9d1d9;
+  color: #374151;
   line-height: 1.8;
 }
 
 .demand-card {
-  background: #161b22;
-  border: 1px solid #21262d;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 1.25rem 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 .demand-header {
@@ -169,10 +169,7 @@
   margin-bottom: 0.75rem;
 }
 
-.demand-emoji {
-  font-size: 2rem;
-  flex-shrink: 0;
-}
+.demand-emoji { font-size: 2rem; flex-shrink: 0; }
 
 .demand-label {
   font-family: 'Outfit', sans-serif;
@@ -182,14 +179,14 @@
 
 .demand-score {
   font-size: 0.8rem;
-  color: #7d8590;
+  color: #9ca3af;
   margin-top: 0.15rem;
 }
 
 .demand-bar-wrap {
   flex: 1;
   height: 6px;
-  background: #21262d;
+  background: #f3f4f6;
   border-radius: 3px;
   overflow: hidden;
 }
@@ -208,9 +205,9 @@
 
 .demand-signal {
   font-size: 0.75rem;
-  color: #7d8590;
-  background: #0d1117;
-  border: 1px solid #21262d;
+  color: #6b7280;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
   border-radius: 4px;
   padding: 0.2rem 0.6rem;
 }
@@ -219,26 +216,23 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  background: #161b22;
-  border: 1px solid #21262d;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-left: 4px solid #388bfd;
   border-radius: 10px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
-.timing-emoji {
-  font-size: 1.8rem;
-  flex-shrink: 0;
-}
-
+.timing-emoji { font-size: 1.8rem; flex-shrink: 0; }
 .timing-content { flex: 1; }
 
 .timing-label {
   font-size: 0.65rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #7d8590;
+  color: #9ca3af;
   margin-bottom: 0.25rem;
   font-weight: 500;
 }
@@ -247,13 +241,13 @@
   font-family: 'Outfit', sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #e6edf3;
+  color: #0d1117;
   margin-bottom: 0.25rem;
 }
 
 .timing-detail {
   font-size: 0.875rem;
-  color: #7d8590;
+  color: #6b7280;
   font-weight: 300;
   line-height: 1.6;
 }
