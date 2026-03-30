@@ -2,33 +2,34 @@
 
 .back-btn {
   background: none;
-  border: 1px solid #222;
-  border-radius: 4px;
-  color: #888;
+  border: 1px solid #21262d;
+  border-radius: 6px;
+  color: #7d8590;
   padding: 0.4rem 1rem;
   font-size: 0.8rem;
   cursor: pointer;
   margin-bottom: 1.5rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   transition: color 0.2s, border-color 0.2s;
 }
 
-.back-btn:hover { color: #f5c842; border-color: #f5c842; }
+.back-btn:hover { color: #388bfd; border-color: #388bfd; }
 
 .detail-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 800;
-  color: #ffffff;
+  color: #e6edf3;
   line-height: 1.15;
   margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
 }
 
 .detail-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  color: #666;
+  color: #7d8590;
   font-size: 0.875rem;
   font-weight: 300;
   margin-bottom: 0.5rem;
@@ -36,18 +37,18 @@
 
 .detail-category {
   font-size: 0.75rem;
-  color: #555;
+  color: #484f58;
   margin-bottom: 1.5rem;
 }
 
 .detail-section-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 0.7rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #f5c842;
-  border-bottom: 1px solid #1e1e1e;
+  color: #388bfd;
+  border-bottom: 1px solid #21262d;
   padding-bottom: 6px;
   margin: 1.5rem 0 1rem;
 }
@@ -60,74 +61,79 @@
 }
 
 .price-card {
-  background: #111;
-  border: 1px solid #1e1e1e;
-  border-radius: 8px;
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 10px;
   padding: 1.2rem 1.5rem;
   min-width: 140px;
   flex: 1;
+  transition: border-color 0.2s;
 }
+
+.price-card:hover { border-color: #388bfd; }
 
 .price-card-label {
   font-size: 0.65rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #555;
+  color: #484f58;
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .price-card-value {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #e6edf3;
 }
 
 .no-price {
-  background: #111;
-  border: 1px solid #1e1e1e;
-  border-radius: 8px;
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 10px;
   padding: 1rem 1.5rem;
-  color: #555;
+  color: #484f58;
   font-size: 0.875rem;
   margin-bottom: 1rem;
 }
 
 .buy-link {
   display: inline-block;
-  color: #f5c842;
+  color: #388bfd;
   font-size: 0.875rem;
   text-decoration: none;
   margin-bottom: 0.5rem;
   transition: opacity 0.2s;
+  font-weight: 500;
 }
 
 .buy-link:hover { opacity: 0.7; }
 
 .insight-btn {
-  background: #f5c842;
-  color: #0a0a0a;
+  background: #388bfd;
+  color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 0.85rem 2rem;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.2s;
   margin-bottom: 1rem;
 }
 
-.insight-btn:hover { background: #ffd84d; }
+.insight-btn:hover { background: #58a6ff; }
 .insight-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .insight-box {
-  background: #111;
-  border: 1px solid #1e1e1e;
-  border-top: 3px solid #f5c842;
-  border-radius: 6px;
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-top: 3px solid #388bfd;
+  border-radius: 8px;
   padding: 1.5rem;
   margin-top: 0.5rem;
 }
@@ -136,13 +142,14 @@
   font-size: 0.65rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #f5c842;
+  color: #388bfd;
   margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
 .insight-text {
   font-size: 0.95rem;
   font-weight: 300;
-  color: #ccc;
+  color: #c9d1d9;
   line-height: 1.8;
 }

@@ -1,25 +1,26 @@
 .header {
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #21262d;
   padding: 1.25rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 100%;
+  background: #0d1117;
 }
 
 .header-logo {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 1.4rem;
   font-weight: 800;
-  color: #ffffff;
+  color: #e6edf3;
   letter-spacing: -0.5px;
 }
 
-.header-logo span { color: #f5c842; }
+.header-logo span { color: #388bfd; }
 
 .header-tag {
   font-size: 0.7rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #444;
+  color: #30363d;
+  font-weight: 500;
 }

@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# 🎟️ TicketIQ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I kept noticing that ticket prices for the same event could vary wildly depending on when you bought — so I built something to understand the pattern and help buyers make smarter decisions.
 
-## Available Scripts
+TicketIQ lets you search any live event, see real pricing data, and get AI-powered analysis explaining what the market is telling you and when the best time to buy is.
 
-In the project directory, you can run:
+## What It Does
 
-### `npm start`
+Search any artist, team, show, or venue and the app shows you:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Real-time event listings powered by the Ticketmaster API
+- Pricing range for each event
+- Event details — venue, date, category
+- Direct link to buy tickets on Ticketmaster
+- AI-generated market analysis powered by Claude that explains demand, pricing patterns, and the best time to buy
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Stack
 
-### `npm test`
+- React — frontend framework
+- Ticketmaster Discovery API — live event and pricing data
+- Claude API (Anthropic) — AI-generated market insights
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What I'd Add Next
 
-### `npm run build`
+- Price history tracking — show how prices have changed over time leading up to an event
+- Deal score — a simple rating (great deal / fair / overpriced) based on pricing relative to similar events
+- Calendar view — browse events by date instead of just search
+- Price drop alerts — notify users when prices fall for a saved event
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run It Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/katyabalin/ticketiq-react.git
+cd ticketiq-react
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a `.env` file:
+```
+REACT_APP_TICKETMASTER_API_KEY=your-key-here
+REACT_APP_ANTHROPIC_API_KEY=your-key-here
+```
 
-### `npm run eject`
+Then:
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Get a free Ticketmaster API key at [developer.ticketmaster.com](https://developer.ticketmaster.com) and an Anthropic key at [console.anthropic.com](https://console.anthropic.com).
