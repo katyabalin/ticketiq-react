@@ -153,3 +153,107 @@
   color: #c9d1d9;
   line-height: 1.8;
 }
+
+.demand-card {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.demand-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.demand-emoji {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.demand-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.demand-score {
+  font-size: 0.8rem;
+  color: #7d8590;
+  margin-top: 0.15rem;
+}
+
+.demand-bar-wrap {
+  flex: 1;
+  height: 6px;
+  background: #21262d;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.demand-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.demand-signals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.demand-signal {
+  font-size: 0.75rem;
+  color: #7d8590;
+  background: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+}
+
+.timing-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-left: 4px solid #388bfd;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.timing-emoji {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.timing-content { flex: 1; }
+
+.timing-label {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7d8590;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.timing-recommendation {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e6edf3;
+  margin-bottom: 0.25rem;
+}
+
+.timing-detail {
+  font-size: 0.875rem;
+  color: #7d8590;
+  font-weight: 300;
+  line-height: 1.6;
+}
